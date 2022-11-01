@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Scramble it</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <h2>SCRAMBLE IT!</h2>
+  </header>
+  <section class="custom-section">
+    <div class="form-section full-screen">
+      <form id="form" onsubmit="scramble()">
+        <p><span class="hidden">---------</span><textarea type="text" id="content" value="" required
+            placeholder="Type in contents here."></textarea> </p>
+        <p><span class="hidden">------------------</span><textarea type="text" id="words" value="" required
+            placeholder="Words to Scramble"></textarea></p>
+        <p><span class="hidden">------------------------------------------</span>
+          <select name="sign" id="sign" required>
+            <option value="">Choose a sign to replace the words with</option>
+            <option value=".">.</option>
+            <option value="?">?</option>
+            <option value="#">#</option>
+            <option value="*">*</option>
+          </select>
+        </p>
+
+        <p><span class="hidden">---------------------------------------------------------------------------------</span>
+          <button class="btn" type="button" id="button"><span href="#">Redact Now!</span></button>
+        </p>
+
+      </form>
+    </div>
+    <div class="full-screen padded">
+      <div class="result">
+
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+
+
